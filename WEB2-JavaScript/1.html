@@ -1,0 +1,46 @@
+<!-- TAG를 이용해 효과를 주자 -->
+<!-- 강조  <strong> 내용 </strong> -->
+<!-- 밑줄  <u> 내용 </u> -->
+<!-- 제목  <h1> 내용 </h1> h 뒤의 숫자는 글자 크기(클수록 작은 크기) -->
+<!-- 문단  <p> 내용 </p> -->
+<!-- 줄바꿈 <br>  -->
+<!-- 리스트 <li> </li> -->
+
+<!doctype html> <!-- 이 문서가 html로 작성되었다는 것을 알려줌 -->
+<html>
+  <head>
+    <!-- 본문의 제목 -->
+    <title>WEB2 - CSS</title>
+
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+  </head>
+
+  <body>
+    <h1><a href="index.html">WEB2 JavaScript</a></h1>
+    <input type="button" value="night" onclick="
+      nightDayHandler(this);
+    ">
+    <div id="grid">
+      <ol>
+        <li><a href="1.html" style="color:grey;">HTML</a> </li>
+        <li><a href="2.html">CSS</a> </li>
+        <li><a href="3.html">JavaScripts</a> </li>
+      </ol>
+
+      <div>
+        <h2> HTML이란 무엇인가? </h2>
+        <p>
+          Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web applications.
+          Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages.
+          HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+        </p>
+        <p style="margin-top:25px;">
+          HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the rendered page.
+          HTML provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

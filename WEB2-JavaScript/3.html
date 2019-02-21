@@ -5,41 +5,12 @@
   <head>
     <title>WEB2 - CSS</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <script>
-      function nightDayHandler(self){
-        var target = document.querySelector('body');
-
-        if(self.value === 'night'){
-          target.style.backgroundColor='black';
-          target.style.color='white';
-          self.value = 'day'
-
-          var links = document.querySelectorAll('a');
-          var i = 0;
-          while(i<links.length){
-            links[i].style.color='red';
-            i=i+1;
-          }
-        }
-        else{
-          target.style.backgroundColor='white';
-          target.style.color='black';
-          self.value = 'night'
-
-          var links = document.querySelectorAll('a');
-          var i = 0;
-          while(i<links.length){
-            links[i].style.color='blue';
-            i=i+1;
-          }
-        }
-    }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
   </head>
 
   <body>
-    <h1><a href="index.html">JavaScript</a></h1>
+    <h1><a href="index.html">WEB2 JavaScript</a></h1>
     <input type="button" value="night" onclick="
       nightDayHandler(this);
     ">
