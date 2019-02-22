@@ -26,10 +26,14 @@
             document.querySelector('article').innerHTML = text;
         ">HTML</a> </li>
       <li><a onclick="
-        document.querySelector('article').innerHTML = '<h2>CSS</h2>CSS is....';
+        fetch('css').then(function(response){
+          response.text().then(function(text){
+            document.querySelector('article').innerHTML = text;
         ">CSS</a> </li>
       <li><a onclick="
-        document.querySelector('article').innerHTML = '<h2>JS</h2>JS is....';
+        fetch('javascript').then(function(response){
+          response.text().then(function(text){
+            document.querySelector('article').innerHTML = text;
         ">JavaScripts</a> </li>
     </ol>
 
