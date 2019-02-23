@@ -43,6 +43,8 @@
 
       fetch('list').then(function(response){
         response.text().then(function(text){
+          //<li><a href="#!html" onclick="fetchPage('html')">html</a></li>
+          var items = text.split(',');
           document.querySelector('#nav').innerHTML = text;
         })
       });
