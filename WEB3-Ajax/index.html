@@ -50,6 +50,7 @@
           console.log(items);
           while(i<items.length){
             var item = items[i];
+            item = item.trim();
             console.log(item);
             var tag = '<li><a href"'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>';
             tags = tags + tag;
