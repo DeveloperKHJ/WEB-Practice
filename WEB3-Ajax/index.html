@@ -47,8 +47,10 @@
           var items = text.split(',');
           var i =0;
           var tags = '';
+          console.log(items);
           while(i<items.length){
             var item = items[i];
+            console.log(item);
             var tag = '<li><a href"'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>';
             tags = tags + tag;
             i = i + 1;
